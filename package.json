@@ -1,6 +1,6 @@
 {
   "name": "ssl-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Allows you to specify SSL/TLS cipher suites based on both security and browser compatibility. ",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikemaccana/tls-cipher-suites.git"
+    "url": "https://github.com/mikemaccana/ssl-config.git"
   },
   "keywords": [
     "tls",
@@ -18,9 +18,9 @@
   "author": "Mike MacCana <mike.maccana@gmail.com>",
   "license": "MPL",
   "bugs": {
-    "url": "https://github.com/mikemaccana/tls-cipher-suites/issues"
+    "url": "https://github.com/mikemaccana/ssl-config/issues"
   },
-  "homepage": "https://github.com/mikemaccana/tls-cipher-suites",
+  "homepage": "https://github.com/mikemaccana/ssl-config",
   "dependencies": {
     "assert": "^1.3.0",
     "es6-shim": "^0.27.1",
