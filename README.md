@@ -10,15 +10,15 @@ Just use either 'modern', 'intermediate' or 'old'.
 
 ### modern
 
-Firefox 27, Chrome 22, IE 11, Opera 14, Safari 7, Android 4.4, Java 8 and newer.
+Requires IE 11, Firefox 27, Chrome 22, Safari 7, Android 4.4, Opera 14, Java 8 or newer.
 
 ### intermediate
 
-Firefox 1, Chrome 1, IE 7, Opera 5, Safari 1, Windows XP IE8, Android 2.3, Java 7 and newer.
+Requires IE 7, Firefox 1, Chrome 1, Safari 1, Windows XP IE8, Android 2.3, Opera 5, Java 7 or newer.
 
 ### old
 
-Windows XP IE6, Java 6 and newer. You really shouldn't use this setting, it is implemented for completeness.
+Windows XP IE6, Java 6 and newer. You really shouldn't use this setting, it is implemented for compatibility with Mozilla's tools.
 
 Eg:
 
