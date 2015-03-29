@@ -22,7 +22,7 @@ Windows XP IE6, Java 6 and newer. You really shouldn't use this setting, it is i
 
 Eg:
 
-	var sslConfig = require('ssl-cipher-suites')('high');
+	var sslConfig = require('ssl-config')('high');
 
 Then run `https.createServer` per [node.js TLS](https://nodejs.org/api/tls.html) and [io.js TLS](https://iojs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener) docs.
 
