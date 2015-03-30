@@ -2,6 +2,8 @@
 
 A node.js implementation of the recommended cipher suites and TLS/SSL versions from Mozilla's [Server Side TLS](https://github.com/mozilla/server-side-tls) project.
 
+The suite list uses [the cipher suite prioritization logic from Mozilla](https://wiki.mozilla.org/Security/Server_Side_TLS#Prioritization_logic). Since [Firefox](https://www.ssllabs.com/ssltest/viewClient.html?name=Firefox&version=35&platform=OS%20X) and [Chrome](https://www.ssllabs.com/ssltest/viewClient.html?name=Chrome&version=40&platform=OS%20X) don't support AES-GCM with 256 bit keys, a 128 bit AES key is considered superior.
+
 Note **this package only sets cipher suites and TLS/SSL versions**, other parts of the recommendations are implemented elsewhere, eg, for Express servers HSTS we recommend using [Helmet](https://www.npmjs.com/package/helmet).
 
 ## Usage
