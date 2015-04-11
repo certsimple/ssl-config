@@ -24,7 +24,7 @@ Windows XP IE6, Java 6 and newer. You really shouldn't use this setting, it is i
 
 Eg:
 
-	var sslConfig = require('ssl-config')('high');
+	var sslConfig = require('ssl-config')('modern');
 
 Then run `https.createServer` per [node.js TLS](https://nodejs.org/api/tls.html) and [io.js TLS](https://iojs.org/api/tls.html#tls_tls_createserver_options_secureconnectionlistener) docs.
 
@@ -32,7 +32,7 @@ Then run `https.createServer` per [node.js TLS](https://nodejs.org/api/tls.html)
 		key: privateKey,
 		cert: certificate,
 		ca: certificateAuthority,
-		ciphers: sslConfig.ciphers,
+		ciphers: sslConfig.cipherSuites,
 		honorCipherOrder: true,
 		secureOptions: sslConfig.minimumTLSVersion
 	});
@@ -43,7 +43,7 @@ Or for express.js
 		key: privateKey,
 		cert: certificate,
 		ca: certificateAuthority,
-		ciphers: sslConfig.ciphers,
+		ciphers: sslConfig.cipherSuites,
 		honorCipherOrder: true,
 		secureOptions: sslConfig.minimumTLSVersion
 	}, app);
