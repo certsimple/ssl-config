@@ -48,3 +48,19 @@ Or for express.js
 		secureOptions: sslConfig.minimumTLSVersion
 	}, app);
 
+Or for [Hapi](http://hapijs.com/):
+
+```
+var server = new Hapi.Server();
+server.connection({
+  // other config options here
+  tls: {
+    key: privateKey,
+    cert: certificate,
+    ca: certificateAuthority,
+    ciphers: sslConfig.ciphers,
+    honorCipherOrder: true,
+    secureOptions: sslConfig.minimumTLSVersion
+  }
+});
+```
