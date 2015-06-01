@@ -32,7 +32,7 @@ Then run `https.createServer` per [node.js TLS](https://nodejs.org/api/tls.html)
 		key: privateKey,
 		cert: certificate,
 		ca: certificateAuthority,
-		ciphers: sslConfig.cipherSuites,
+		ciphers: sslConfig.ciphers,
 		honorCipherOrder: true,
 		secureOptions: sslConfig.minimumTLSVersion
 	});
@@ -43,7 +43,7 @@ Or for express.js
 		key: privateKey,
 		cert: certificate,
 		ca: certificateAuthority,
-		ciphers: sslConfig.cipherSuites,
+		ciphers: sslConfig.ciphers,
 		honorCipherOrder: true,
 		secureOptions: sslConfig.minimumTLSVersion
 	}, app);
