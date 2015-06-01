@@ -1,6 +1,6 @@
 {
   "name": "ssl-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Allows you to specify SSL/TLS cipher suites based on both security and browser compatibility. ",
   "main": "index.js",
   "scripts": {
