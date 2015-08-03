@@ -61,6 +61,9 @@ server.connection({
     ciphers: sslConfig.ciphers,
     honorCipherOrder: true,
     secureOptions: sslConfig.minimumTLSVersion
+  },
+  routes: {
+    security: true // turns on HSTS and other security headers
   }
 });
 ```
