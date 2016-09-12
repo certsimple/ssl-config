@@ -136,7 +136,7 @@ var cryptoLevels = {
 	}
 }
 
-module.exports = function(cryptoLevelName){
+module.exports = function(cryptoLevelName) {
 	var cryptoLevel = cryptoLevels[cryptoLevelName];
 	if ( ! cryptoLevel ) {
 		throw new Error('No matching crypto level', cryptoLevelName);
