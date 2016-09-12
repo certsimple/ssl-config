@@ -134,7 +134,7 @@ var cryptoLevels = {
 			"!SRP"
 		]
 	}
-}
+};
 
 module.exports = function(cryptoLevelName) {
 	var cryptoLevel = cryptoLevels[cryptoLevelName];
@@ -147,6 +147,4 @@ module.exports = function(cryptoLevelName) {
 	nodeSettings.ciphers = cryptoLevel.cipherSuites.join(':');
 	nodeSettings.minimumTLSVersion = minimumTLSVersion(cryptoLevel.minimumTLSVersion);
 	return nodeSettings;
-}
-
-
+};
