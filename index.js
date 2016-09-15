@@ -134,19 +134,17 @@ var cryptoLevels = {
 			"!SRP"
 		]
 	}
-}
+};
 
-module.exports = function(cryptoLevelName){
-	var cryptoLevel = cryptoLevels[cryptoLevelName]
+module.exports = function(cryptoLevelName) {
+	var cryptoLevel = cryptoLevels[cryptoLevelName];
 	if ( ! cryptoLevel ) {
 		throw new Error('No matching crypto level', cryptoLevelName);
 	}
-	var nodeSettings = {}
+	var nodeSettings = {};
 
 	// node shows cipherSuites as a string called 'ciphers'
 	nodeSettings.ciphers = cryptoLevel.cipherSuites.join(':');
 	nodeSettings.minimumTLSVersion = minimumTLSVersion(cryptoLevel.minimumTLSVersion);
 	return nodeSettings;
-}
-
-
+};
