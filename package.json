@@ -19,6 +19,9 @@
     "browser"
   ],
   "author": "Mike MacCana <mike.maccana@gmail.com>",
+  "contributors": [
+    "Alex Jordan <alex@strugee.net>"
+  ],
   "license": "MPL-2.0",
   "bugs": {
     "url": "https://github.com/mikemaccana/ssl-config/issues"
